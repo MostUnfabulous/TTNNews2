@@ -1,0 +1,23 @@
+.tube-nav {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  z-index: $zindex-fixed;
+  background-color: $secondary-color;
+
+  ul {
+    margin-top: 7px;
+    font-family: 'Concert One', cursive;
+    font-size: 18px;
+    padding-left: 20px;
+
+
+  }
+
+  li {
+    text-transform: uppercase;
+    padding: 0 18px;
+
+  }
+
+}

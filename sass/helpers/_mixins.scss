@@ -1,0 +1,32 @@
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+     filter:         drop-shadow(5px 5px 5px #222);
+  } @else {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+       filter:         drop-shadow(5px 5px 5px #222);
+  }
+}
+
+/// Mixin printing a linear-gradient
+/// as well as a plain color fallback
+/// and the `-webkit-` prefixed declaration
+/// @access public
+/// @param {Keyword | Angle} $direction - Linear gradient direction
+/// @param {Arglist} $color-stops - List of color-stops composing the gradient
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+
+// Responsive utilities
+
+//
+// More easily include all the states for responsive-utilities.less.
+// [converter] $parent hack
+@mixin font-smoothing {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

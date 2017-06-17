@@ -1,0 +1,118 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @include font-smoothing;
+  font-family: 'PT Sans Narrow', sans-serif;
+  text-shadow: rgba(0,0,0,.01) 0 0 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: $text-color;
+
+
+  &.title-1{
+  color: $title-color-1;
+
+}
+
+&.featured{
+  color: $secondary-color;
+}
+
+&.news-title-lg{
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}}
+
+
+
+
+
+p {
+    @include font-smoothing;
+  font-family: 'PT Sans', sans-serif;
+    color: $text-color;
+}
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
+// Small devices (landscape phones, 576px and up)
+
+@media (min-width: 384px) {
+
+  h1{font-size: 200px;}
+}
+@media (min-width: 576px) {h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 1.5em;
+}
+h3 {
+  font-size: 1.05em;
+}
+h4 {
+  font-size: 1em;
+}
+h5 {
+  font-size: 0.75em;
+}
+h6 {
+  font-size: 0.5em;
+}
+p{
+  font-size: 0.85em;
+}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  h1 {
+    font-size: 1.75em;
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  h3 {
+    font-size: 0.9em;
+  }
+  h4 {
+    font-size: 0.7em;
+  }
+  h5 {
+    font-size: 0.55em;
+  }
+  h6 {
+    font-size: 0.40em;
+  }
+  p{
+    font-size: 0.775em;
+  }}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  h4 {
+    font-size: 0.85em;
+  }
+  h5 {
+    font-size: 0.6em;
+  }
+  h6 {
+    font-size: 0.45em;
+  }
+  p{
+    font-size: 0.9em;
+  }
+}

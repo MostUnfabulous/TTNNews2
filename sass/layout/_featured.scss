@@ -1,0 +1,13 @@
+section {
+  padding-top: 5em;
+
+  &#featured {}
+
+  &#cutting-edge {
+    .card-group{
+      border-top: 6px solid $title-color-1;
+      padding: 0px;
+
+    }
+  }
+}

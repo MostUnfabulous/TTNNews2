@@ -1,0 +1,24 @@
+.search-btn{
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10px;
+  border: 0;
+  font-family: Arial;
+  color: $primary-color;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+&.search-btn:hover {
+  background: $primary-color;
+  color: white;
+}}
+
+
+.fa{
+
+&.fa-social{
+color: $secondary-color;
+display: inline;
+}
+}
